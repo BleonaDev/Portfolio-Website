@@ -1,8 +1,7 @@
 body{
      font-family: 'Poppins', sans-serif!important;
      margin:0;
-     padding:0;
-     height:120vh;
+     padding:0;   
 }
 h1,h2{
     font-family:'Times New Roman', Times, serif;
@@ -63,12 +62,14 @@ h1,h2{
     margin-top:13px;
 color: black !important;
 }
+/*Home section*/
 .container1{
     display:grid;
     grid-template-columns:1fr 1fr;
     gap:130px;
     margin-top:100px;
     margin-left:70px;
+    position:relative;
 }
 .container1 img{
     border-radius:50%;
@@ -83,12 +84,45 @@ color: black !important;
     margin-top:5px;
     font-size:18px;
 }
+.buttons{
+    display:flex;
+    flex-direction:row;
+    gap:20px;
+    align-items:center;
+}
+.github,
+.linkedin,
+.projects a{
+    text-decoration:none;
+    font-size:15px;
+    padding:10px 13px;
+    background-color:black;
+    color:white;
+    border-radius:5px;
+    align-items:center;
+}
+.github img{
+    border-radius:50%;
+}
+.linkedin img{
+    border:none;
+    margin-top:-5px;
+}
+.github:hover,
+.linkedin:hover,
+.projects a:hover{
+    background-color:white;
+    color:black;
+    border:solid 1px black;
+}
+/*About me Section*/
 .aboutMe{
     margin:auto;
     width:800px;
     text-align: center;
     font-size:19px;
 }
+/*Skills Section*/
 .skills{
     margin-left:180px;
 }
@@ -110,7 +144,6 @@ color: black !important;
     transform: translateY(0);
   }
 }
-
 .skill-btn:nth-of-type(1) { animation-delay: 0.2s; }
 .skill-btn:nth-of-type(2) { animation-delay: 0.4s; }
 .skill-btn:nth-of-type(3) { animation-delay: 0.6s; }
@@ -125,7 +158,6 @@ color: black !important;
   transform: translateY(30px);
   transition: opacity 0.5s ease, transform 0.5s ease;
 }
-
 .fade-in.show {
   opacity: 1;
   transform: translateY(0);
@@ -146,6 +178,7 @@ color: black !important;
 box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
 transition: box-shadow 0.3s ease;
 }
+/*Projects Section*/
 .projects{
     display:grid;
     grid-template-columns:1fr 1fr;
@@ -156,11 +189,13 @@ transition: box-shadow 0.3s ease;
     position:relative;
     padding:20px 40px;
     margin-left:50px;
+    max-height:680px;
     height:680px;
-border:solid 0.4px rgb(99, 99, 99);
-border-radius:30px;
-width:500px;
- box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    border:solid 0.4px rgb(99, 99, 99);
+    border-radius:30px;
+    max-width:500px;
+    width:500px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
 }
 .project p{
     color:hsl(0, 0%, 20%);
@@ -170,8 +205,8 @@ box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
 transition: box-shadow 0.3s ease;
 }
 .projects img{
-    height:200px;
-    width:400px;
+    max-height:200px;
+    max-width:400px;
     margin-bottom:15px;
     border:solid 1px black;
     border-radius:20px;
@@ -180,30 +215,7 @@ transition: box-shadow 0.3s ease;
 .projects img:hover {
   transform: scale(1.02); 
 }
-.projects a{
-    text-decoration:none;
-    position:absolute;
-    display:flex;
-    bottom:3.5%;
-    left:5%;
-    font-size:15px;
-    padding:5px 10px;
-    background-color:black;
-    color:white;
-    border-radius:5px;
-    align-items:center;
-    height:40px;
-    width:100px;
-}
-.projects a:hover{
-    background-color:white;
-    color:black;
-    border:solid 1px black;
-}
-
-
-
-.footer{
+.footer{ /*Footer Section*/
     background-color:black;
     color:#f1f5f9;
     text-align:center;
@@ -212,4 +224,54 @@ transition: box-shadow 0.3s ease;
 }
 .footer p{
      margin-top:10px;
+}
+@media (max-width: 576px) {
+     .navbar .nav-link {
+    color: black !important;
+    font-weight:50;
+  }
+  .contactLi{
+    margin-top:100px;
+    margin-left:55px;
+  }
+    .container1{
+    grid-template-columns:1fr;
+    gap:50px;
+    }
+    .aboutMe{
+        width:400px;
+        font-size:16px;
+    }
+    .skills{
+   width:400px;
+   margin:auto;
+}
+.skills button{
+    margin:4px;
+}
+.internships{
+    width:480px;
+    font-size:15px;
+}
+ .projects{
+    grid-template-columns:1fr;
+    gap:20px;
+    text-align:center;
+}
+.project{
+    margin:auto;
+    width:430px;
+    height:610px;
+    font-size:15px;
+}
+.projects img{
+    height:170px;
+    width:380px;
+}
+.project img{
+    width:250px;
+}
+.buttons{
+    margin-top:30px;
+}
 }
