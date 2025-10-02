@@ -239,11 +239,11 @@ transition: box-shadow 0.3s ease;
     gap:50px;
     }
     .aboutMe{
-        width:100%;
+        width:400px;
         font-size:16px;
     }
     .skills{
-   width:100%;
+   width:400px;
    margin:auto;
 }
 .skills button{
@@ -260,13 +260,13 @@ transition: box-shadow 0.3s ease;
 }
 .project{
     margin:auto;
-    width:100%;
+    width:430px;
     height:610px;
     font-size:15px;
 }
 .projects img{
     height:170px;
-    width:100%;
+    width:380px;
 }
 .project img{
     width:250px;
