@@ -193,8 +193,6 @@ transition: box-shadow 0.3s ease;
     height:680px;
     border:solid 0.4px rgb(99, 99, 99);
     border-radius:30px;
-    max-width:500px;
-    width:500px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
 }
 .project p{
@@ -239,38 +237,38 @@ transition: box-shadow 0.3s ease;
     gap:50px;
     }
     .aboutMe{
-        max-width:400px;
+        max-width:100%;
         font-size:16px;
     }
     .skills{
-   width:100%;
+   max-width:100%;
    margin:auto;
 }
 .skills button{
     margin:4px;
 }
 .internships{
-    width:100%;
+    max-width:100%;
     font-size:15px;
 }
  .projects{
-    width:100%;
+    max-width:100% !important;
     grid-template-columns:1fr;
     gap:20px;
     text-align:center;
 }
 .project{
     margin:auto;
-    width:100%;
+    max-width:100% !important;
     height:610px;
     font-size:15px;
 }
 .projects img{
     height:185px;
-    width:380px;
+    max-width:100%;
 }
 .project img{
-    width:250px;
+    max-width:100%;
 }
 .buttons{
     margin-top:30px;
