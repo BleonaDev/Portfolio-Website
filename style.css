@@ -67,8 +67,7 @@ color: black !important;
     display:grid;
     grid-template-columns:1fr 1fr;
     gap:130px;
-    margin-top:100px;
-    margin-left:70px;
+    padding:100px;
     position:relative;
 }
 .container1 img{
@@ -233,6 +232,7 @@ transition: box-shadow 0.3s ease;
     margin-left:55px;
   }
     .container1{
+    max-width:100%;
     grid-template-columns:1fr;
     gap:50px;
     }
